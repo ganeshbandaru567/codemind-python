@@ -1,10 +1,11 @@
-n=input()
-n=n.lower()
-a=[]
-for i in range(len(n)):
-    if n[i]!=' ':
-        a.append(n[i])
-a=list(set(a))
-a.sort()
-for i in range(len(a)):
-    print(a[i],end='')
+s=input().lower()
+
+lst='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'
+for i in s:
+    if i==' ':
+        continue
+    else:
+        if s.count(i)==1:
+            lst+=i
+k=sorted(lst)
+print(''.join(k))
