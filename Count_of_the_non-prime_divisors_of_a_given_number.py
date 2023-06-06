@@ -10,11 +10,12 @@ def prime(n):
         return True
 n=int(input())
 l=[]
+count=0
 for i in range(1,n+1):
     if n%i==0:
         l.append(i)
-c=0
-for i in l:
-    if prime(i)==False:
-        c+=1
-print(c)
+for i in range(len(l)):
+    if prime(l[i])==False:
+        count+=1
+print(count)
+        
