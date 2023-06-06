@@ -1,4 +1,4 @@
-import math 
+import math
 def prime(n):
     if n==1:
         return False
@@ -12,18 +12,20 @@ for i in range(int(input())):
     a=int(input())
     for i in range(a,1,-1):
         if prime(i):
-            x=i
+            k=i
             break
-    l=a+1
+    s=a+1
     while 1:
-        if prime(l):
-            y=l
+        if prime(s):
+            l=s
             break
-        l=l+1
-    u=abs(a-x)
-    v=abs(a-y)
-    if u>v:
-        print(y)
+        s+=1
+    x=a-k
+    y=l-a
+    if x<y:
+        print(k)
+    elif x==y:
+        print(k)
     else:
-        print(x)
-    
+        print(l)
+        
