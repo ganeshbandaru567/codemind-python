@@ -1,8 +1,8 @@
 n=int(input())
-k=list(str(n))
-for i in range(len(k)):
-    if(k[i]=="6"):
-        k[i]="9"
+s=list(str(n))
+for i in range(len(s)):
+    if s[i]=='6':
+        s[i]='9'
         break
-for i in range(len(k)):
-    print(k[i],end="")
+for i in range(len(s)):
+    print(s[i],end='')
