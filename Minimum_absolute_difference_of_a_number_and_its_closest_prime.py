@@ -1,4 +1,4 @@
-import math 
+import math
 def prime(n):
     if n==1:
         return False
@@ -8,16 +8,25 @@ def prime(n):
             return False
     else:
         return True
-
-a=int(input())
-for i in range(a,1,-1):
+n=int(input())
+if prime(n):
+    print("0")
+    exit()
+for i in range(n-1,1,-1):
     if prime(i):
-        x=(a-i)
+        k=i
         break
-l=a+1
+a=n+1
 while 1:
-    if prime(l):
-        y=(l-a)
+    if prime(a):
+        l=a
         break
-    l=l+1
-print(min(x,y))
+    a+=1
+r1=n-k
+r2=l-n
+if r1<r2:
+    print(r1)
+elif r1==r2:
+    print(r1)
+else:
+    print(r2)
