@@ -1,4 +1,4 @@
-import math 
+import math
 def prime(n):
     if n==1:
         return False
@@ -10,7 +10,6 @@ def prime(n):
         return True
 a=int(input())
 b=int(input())
-l=[]
-for i in range(a,b):
-    if prime(i)==True:
+for i in range(a,b+1):
+    if prime(i):
         print(i)
